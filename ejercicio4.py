@@ -52,3 +52,21 @@ class Comprador:
             ]
             lista_strings.append("; ".join(datos_articulo))
         return lista_strings
+        
+import csv
+
+def generar_archivos_csv(lista_compradores):
+    for comprador in lista_compradores:
+        nombre_archivo = f"{comprador.nombre}.csv"
+        with open(nombre_archivo, 'w', newline='', encoding='utf-8') as archivo_csv:
+            writer = csv.writer(archivo_csv)
+            writer.writerow(['Identificador', 'Nombre', 'Descripción', 'Marca', 'Precio', 'Puntos'])
+            for articulo in comprador.__articulos_comprados:
+                writer.writerow([articulo.identificador, articulo.nombre, articulo.descripcion,
+                                 articulo.marca, articulo.precio, articulo.puntos])
+        print(f"Archivo {nombre_archivo} generado correctamente.")
+
+
+lista_compradores = [comprador1, comprador2, comprador3, comprador4, comprador5, comprador6]
+
+generar_archivos_csv(lista_compradores)
