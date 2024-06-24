@@ -30,7 +30,7 @@ El tiempo será contabilizado desde el momento que aceptan realizar la actividad
 
 3.3 - Utilizar el método de **ordenamiento burbuja** para ordenarlos de forma **DESCENDENTE** (de mayor valor a menor valor) de acuerdo al puntaje de cada uno.
 
-3.3 - Crear una lista de todos los artículos creados en el punto 3.1, y escribir una función que pueda procesar esta lista y determinar (devolviendo un valor booleano) si existen dos artículos con la misma cantidad de puntos.
+3.3 - Crear una lista enlazada de todos los artículos creados en el punto 3.1, y escribir una función que pueda procesar esta lista y determinar (devolviendo un valor booleano) si existen dos artículos con la misma cantidad de puntos.
 
 ## Ejercicio 4
 
